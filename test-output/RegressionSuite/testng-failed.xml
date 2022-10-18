@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://en-gb.facebook.com"/>
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="test.BasicValidation">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="verifyUrl"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- test.BasicValidation -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
